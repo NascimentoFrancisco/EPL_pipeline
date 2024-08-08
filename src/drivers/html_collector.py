@@ -1,10 +1,10 @@
 from typing import List, Dict
 from bs4 import BeautifulSoup
+from src.drivers.interfaces import HtmlCollectorInterface
 
-class HtmlCollector:
+class HtmlCollector(HtmlCollectorInterface):
 
-    @classmethod
-    def collect_essential_information(cls, html: str) -> List[Dict[str, str]]:
+    def collect_essential_information(self, html: str) -> List[Dict[str, str]]:
         """Collect name and links from the provided html
         - parameters:
             * html(str): html of a specific page to collect names and links

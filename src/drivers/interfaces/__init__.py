@@ -1,0 +1,2 @@
+from .http_requester import HttpRequesterInterface
+from .html_collector import HtmlCollectorInterface
