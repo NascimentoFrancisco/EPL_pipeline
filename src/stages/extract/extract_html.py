@@ -6,6 +6,11 @@ from src.errors.extract_error import ExtractError
 
 
 class ExtractHtml:
+    """Class responsible for extracting information from the HTML originating from the request
+    - parameters:
+        * http_requester(HttpRequesterInterface): An instance of a class that implements `HttpRequesterInterface`
+        * html_collector(HtmlCollectorInterface): An instance of a class that implements `HtmlCollectorInterface`
+    """
 
     def __init__(
         self,

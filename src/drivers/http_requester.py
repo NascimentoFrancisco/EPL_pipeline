@@ -3,6 +3,7 @@ import requests
 from src.drivers.interfaces import HttpRequesterInterface
 
 class HttpRequester(HttpRequesterInterface):
+    """Class responsible for making the request in the URL in which the data is present"""
 
     def __init__(self) -> None:
         self.__url = "https://web.archive.org/web/20121007172955/https://www.nga.gov/collection/anZ1.htm"

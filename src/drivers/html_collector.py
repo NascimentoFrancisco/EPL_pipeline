@@ -3,6 +3,7 @@ from bs4 import BeautifulSoup
 from src.drivers.interfaces import HtmlCollectorInterface
 
 class HtmlCollector(HtmlCollectorInterface):
+    """Class responsible for collecting data present in the HTML originating from the request"""
 
     def collect_essential_information(self, html: str) -> List[Dict[str, str]]:
         """Collect name and links from the provided html

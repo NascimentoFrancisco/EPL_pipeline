@@ -5,6 +5,7 @@ from src.errors.trasnform_error import TransformError
 
 
 class TransformRawData:
+    """Class responsible for transforming data from extraction"""
 
     def transform(self, extract_contract: ExtractContract) -> TransformContract:
         """Transforms extracted data into a TransformContract structure to be read in the next step
