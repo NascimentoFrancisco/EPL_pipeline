@@ -1,8 +1,9 @@
 from typing import Dict
 from src.infra.database_connetor import DatabaseConnector
+from src.infra.interfaces.database_repository import DatabaseRepositoryInterface
 
 
-class DatabaseRepository:
+class DatabaseRepository(DatabaseRepositoryInterface):
     """Responsible for implementing queries in the database"""
 
     @classmethod
